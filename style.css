@@ -165,16 +165,6 @@ nav .container {
   position: relative;
   overflow: hidden;
 }
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0; right: 0; bottom: 0;
-  width: 1px;
-  background: linear-gradient(180deg, transparent, rgba(169,139,63,0.3) 30%, rgba(169,139,63,0.3) 70%, transparent);
-  left: 50%;
-  display: none;
-}
-
 .hero .container {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -183,7 +173,6 @@ nav .container {
   position: relative;
   z-index: 2;
 }
-
 .hero-kicker {
   font-size: 12px;
   letter-spacing: 0.36em;
@@ -201,7 +190,6 @@ nav .container {
   background: var(--dourado);
   display: inline-block;
 }
-
 .hero h1 {
   font-family: var(--font-display);
   font-size: 60px;
@@ -216,7 +204,6 @@ nav .container {
   font-style: italic;
   font-weight: 600;
 }
-
 .hero-sub {
   font-size: 21px;
   color: rgba(255, 255, 255, 0.78);
@@ -226,7 +213,6 @@ nav .container {
   max-width: 580px;
 }
 .hero-sub strong { color: white; font-weight: 500; }
-
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -253,7 +239,6 @@ nav .container {
   text-transform: uppercase;
   font-weight: 600;
 }
-
 .hero-cta-row {
   display: flex;
   align-items: center;
@@ -572,7 +557,7 @@ section {
 }
 
 /* ============================================ */
-/* OPORTUNIDADE — comparação                    */
+/* OPORTUNIDADE                                 */
 /* ============================================ */
 .oportunidade {
   background: var(--verde-escuro);
@@ -667,7 +652,7 @@ section {
 }
 
 /* ============================================ */
-/* CONTEÚDO — sumário                           */
+/* CONTEÚDO                                     */
 /* ============================================ */
 .conteudo {
   background: var(--creme);
@@ -738,7 +723,6 @@ section {
   background: rgba(184, 64, 76, 0.08);
   border-radius: 2px;
 }
-
 .conteudo-side {
   position: sticky;
   top: 110px;
@@ -1450,6 +1434,8 @@ footer .copyright {
 /* ============================================ */
 /* RESPONSIVO                                   */
 /* ============================================ */
+
+/* Tablet */
 @media (max-width: 1024px) {
   :root { --pad-x: 40px; }
   .hero h1 { font-size: 56px; }
@@ -1467,27 +1453,92 @@ footer .copyright {
   footer .container { grid-template-columns: 1fr; }
   .oferta-incluso ul { grid-template-columns: 1fr; }
 }
+
+/* Mobile 100% Otimizado */
 @media (max-width: 640px) {
-  :root { --pad-x: 24px; }
-  section { padding: 80px 0; }
-  .hero { padding: 60px 0 80px 0; }
-  .hero h1 { font-size: 42px; }
-  .hero-stats { grid-template-columns: 1fr; }
-  .section-title { font-size: 34px; }
+  :root { --pad-x: 20px; }
+  section { padding: 60px 0; }
+  
+  /* Topbar & Nav */
+  .topbar .container { flex-direction: column; text-align: center; gap: 6px; padding: 8px 0; font-size: 10px; }
+  nav .container { gap: 12px; }
+  .logo-icon { width: 36px; height: 36px; font-size: 18px; }
+  .logo-text .nome { font-size: 16px; }
+  .nav-cta { padding: 10px 16px; font-size: 12px; }
+
+  /* Hero */
+  .hero { padding: 40px 0 60px 0; text-align: center; }
+  .hero h1 { font-size: 38px; line-height: 1.15; }
+  .hero-sub { font-size: 18px; margin: 0 auto 30px auto; }
+  .hero-kicker { margin-bottom: 20px; justify-content: center; }
+  .hero-stats { grid-template-columns: 1fr; gap: 16px; max-width: 100%; text-align: left; }
+  .hero-cta-row { flex-direction: column; align-items: stretch; gap: 16px; }
+  .btn-primary { width: 100%; justify-content: center; }
+  .hero-pricetag { text-align: center; }
+
+  /* Mockup */
+  .mockup-livro { padding: 32px 24px; border-left-width: 8px; min-height: 380px; }
+  .mockup-livro .titulo-livro { font-size: 32px; }
+  .selo-flutuante { width: 100px; height: 100px; right: -10px; top: -10px; }
+  .selo-flutuante .l2 { font-size: 18px; }
+
+  /* Cred Bar */
+  .cred-bar .container { flex-direction: column; text-align: center; gap: 24px; }
+  .cred-bar .fontes { justify-content: center; gap: 20px; }
+  .cred-bar .fonte { align-items: center; }
+
+  /* Typography */
+  .section-title { font-size: 32px; }
+  .section-lead { font-size: 17px; }
+
+  /* Problema */
   .problema-grid { grid-template-columns: 1fr; }
   .problema-card:nth-child(odd),
-  .problema-card:nth-child(even) {
-    padding: 30px 0;
-    border-right: none;
-  }
-  .metodo-grid { grid-template-columns: 1fr; }
-  .oferta-card-top, .oferta-incluso, .oferta-preco-bloco { padding: 30px 24px; }
+  .problema-card:nth-child(even) { padding: 30px 0; border-right: none; }
+  .problema-card .num { font-size: 48px; }
+  .problema-card h3 { font-size: 22px; }
+
+  /* Comparação */
+  .compara-grid { grid-template-columns: 1fr; gap: 24px; margin-top: 40px; }
+  .compara-col h3 { font-size: 28px; }
+  .compara-col { padding: 30px 24px; }
+
+  /* Conteúdo / Capítulos */
+  .capitulo { grid-template-columns: 40px 1fr; gap: 16px; padding: 16px 0; }
+  .capitulo .cap-num { font-size: 28px; }
+  .capitulo .cap-info h4 { font-size: 18px; }
+
+  /* Metodo */
+  .metodo-grid { grid-template-columns: 1fr; padding-top: 30px; }
+
+  /* Oferta */
+  .oferta-card-top { padding: 30px 20px; display: flex; flex-direction: column; }
+  .oferta-badge { position: relative; transform: none; right: auto; top: auto; align-self: flex-start; margin-bottom: 16px; }
+  .oferta-incluso { padding: 30px 20px; }
+  .oferta-preco-bloco { padding: 30px 20px; }
   .oferta-preco-bloco .reais,
   .oferta-preco-bloco .virgula,
-  .oferta-preco-bloco .centavos { font-size: 100px; }
-  .oferta-preco-bloco .moeda { font-size: 40px; margin-top: 12px; }
+  .oferta-preco-bloco .centavos { font-size: 64px; }
+  .oferta-preco-bloco .moeda { font-size: 28px; margin-top: 8px; }
+  .btn-oferta { width: 100%; padding: 18px 20px; font-size: 14px; justify-content: center; text-align: center; }
+
+  /* Garantia */
   .garantia .container { grid-template-columns: 1fr; gap: 30px; text-align: center; }
-  .garantia-selo { margin: 0 auto; }
-  .cta-final h2 { font-size: 34px; }
-  .topbar .container { font-size: 11px; gap: 12px; }
+  .garantia-selo { margin: 0 auto; width: 150px; height: 150px; }
+  .garantia-selo .meio { font-size: 42px; }
+  .garantia-texto h3 { font-size: 28px; }
+
+  /* FAQ */
+  .faq-q { font-size: 18px; gap: 16px; }
+  .faq-q .ico { width: 28px; height: 28px; font-size: 16px; }
+  .faq-a { font-size: 15px; padding-right: 0; }
+
+  /* CTA Final */
+  .cta-final { padding: 80px 0; }
+  .cta-final h2 { font-size: 32px; }
+  .cta-final p { font-size: 16px; }
+
+  /* Footer */
+  footer .container { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+  footer .col-info { margin: 0 auto; }
 }
