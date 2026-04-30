@@ -102,8 +102,14 @@
       if (!q) return;
       q.addEventListener('click', () => {
         const wasOpen = item.classList.contains('open');
-        items.forEach(i => i.classList.remove('open'));
-        if (!wasOpen) item.classList.add('open');
+        items.forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-q')?.setAttribute('aria-expanded', 'false');
+        });
+        if (!wasOpen) {
+          item.classList.add('open');
+          q.setAttribute('aria-expanded', 'true');
+        }
       });
     });
     // Abre primeiro por padrão

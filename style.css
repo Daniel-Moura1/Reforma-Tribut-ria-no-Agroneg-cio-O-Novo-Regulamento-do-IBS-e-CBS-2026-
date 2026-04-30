@@ -64,6 +64,11 @@ body {
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 ::selection { background: var(--dourado); color: white; }
+:focus-visible {
+  outline: 2px solid var(--dourado-claro);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
 
 .container {
   max-width: var(--max-w);
@@ -127,6 +132,11 @@ img { max-width: 100%; display: block; }
   0% { box-shadow: 0 0 0 0 rgba(220,42,61,0.7); }
   70% { box-shadow: 0 0 0 12px rgba(220,42,61,0); }
   100% { box-shadow: 0 0 0 0 rgba(220,42,61,0); }
+}
+@keyframes goldpulse {
+  0% { box-shadow: 0 0 0 0 rgba(169,139,63,0.7); }
+  70% { box-shadow: 0 0 0 12px rgba(169,139,63,0); }
+  100% { box-shadow: 0 0 0 0 rgba(169,139,63,0); }
 }
 .urgency-text {
   font-size: 13px;
@@ -351,19 +361,12 @@ nav.scrolled { padding: 12px 0; }
   color: var(--dourado);
   font-style: italic;
   font-weight: 700;
-  position: relative;
-  display: inline-block;
-}
-.hero-h1 .hl-gold::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 4px;
-  height: 9px;
-  background: rgba(169,139,63,0.18);
-  z-index: var(--z-behind);
-  border-radius: 2px;
+  display: inline;
+  background: rgba(169,139,63,0.15);
+  padding: 2px 5px;
+  border-radius: 3px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .hero-sub {
@@ -600,7 +603,7 @@ nav.scrolled { padding: 12px 0; }
   gap: 12px;
   margin-bottom: 22px;
 }
-.mockup-top .div { width: 28px; height: 1px; background: var(--dourado); }
+.mockup-top .mockup-divider { width: 28px; height: 1px; background: var(--dourado); }
 .mockup-top .lbl {
   font-size: 11px;
   letter-spacing: 0.26em;
@@ -1590,6 +1593,24 @@ section { padding: 110px 0; }
   font-size: 13px;
   font-weight: 900;
 }
+.oferta-incluso ul .bonus-item {
+  background: rgba(169, 139, 63, 0.10);
+  border-radius: 6px;
+}
+.badge-bonus {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--dourado), var(--dourado-claro));
+  color: var(--verde-escuro);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 2px 7px;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-left: 6px;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+}
 
 .oferta-preco-bloco {
   padding: 50px 56px 56px 56px;
@@ -1872,7 +1893,7 @@ section { padding: 110px 0; }
   border-radius: 50%;
   margin: 0 auto 24px;
   box-shadow: 0 0 0 0 rgba(169,139,63,0.7);
-  animation: redpulse 2s infinite ease-out;
+  animation: goldpulse 2s infinite ease-out;
 }
 .cta-final h2 {
   font-family: var(--font-display);
@@ -2122,4 +2143,5 @@ footer {
   .preco-grande .reais,
   .preco-grande .virgula,
   .preco-grande .centavos { font-size: 80px; }
-  .preco-grande .moeda { font-size: 32px; margin-Não fui programado para fazer isso.
+  .preco-grande .moeda { font-size: 32px; margin-top: 8px; }
+}
