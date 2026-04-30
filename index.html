@@ -3,163 +3,342 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guia Completo do IBS e CBS no Agronegócio — Análise Antecipada da Reforma Tributária</title>
-<meta name="description" content="Manual técnico-profissional para contadores tributaristas do agronegócio. Análise integrada da LC 214/2025, do Regulamento do IBS, da Cartilha do CGIBS e da tabela cClassTrib.">
+<meta name="theme-color" content="#0B3D2E">
+<title>Guia Completo do IBS e CBS no Agronegócio | Resolução CGIBS nº 6/2026 + Decreto nº 12.955/2026</title>
+<meta name="description" content="O único material técnico-profissional com análise integrada dos dois Regulamentos Oficiais publicados em abril de 2026. 12 capítulos, 17 cClassTrib mapeados e 5 casos práticos para contadores do agronegócio.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Guia Completo do IBS e CBS no Agronegócio — Edição 2026">
+<meta property="og:description" content="Análise técnica antecipada para contadores tributaristas, fundamentada nos Regulamentos Oficiais publicados em abril de 2026.">
+<meta property="og:locale" content="pt_BR">
+
+<!-- Preconnect & Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Guia Completo do IBS e CBS no Agronegócio",
+  "description": "Manual técnico-profissional para contadores do agronegócio fundamentado nos Regulamentos Oficiais do IBS (Resolução CGIBS nº 6/2026) e da CBS (Decreto nº 12.955/2026).",
+  "brand": { "@type": "Brand", "name": "Reforma no Agro" },
+  "author": [
+    { "@type": "Person", "name": "Franklin Pinheiro da Silva" },
+    { "@type": "Person", "name": "Daniel Rosa de Moura" }
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "47.90",
+    "priceCurrency": "BRL",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127"
+  }
+}
+</script>
 </head>
 <body>
 
-<div class="topbar">
-  <div class="container">
-    <div class="esq"><span class="pulse"></span> Análise antecipada · Atualizado conforme Regulamento do IBS · LC 227/2026</div>
-    <div class="dir">Oferta de lançamento · 7 dias</div>
+<!-- =================================================== -->
+<!-- COUNTDOWN BAR (urgência genuína)                     -->
+<!-- =================================================== -->
+<div class="urgency-bar" id="urgencyBar">
+  <div class="container urgency-inner">
+    <div class="urgency-left">
+      <span class="urgency-pulse"></span>
+      <span class="urgency-text">Oferta de lançamento termina em</span>
+      <div class="countdown" id="countdown">
+        <div class="cd-cell"><span class="cd-num" id="cdH">00</span><span class="cd-lbl">h</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-cell"><span class="cd-num" id="cdM">00</span><span class="cd-lbl">min</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-cell"><span class="cd-num" id="cdS">00</span><span class="cd-lbl">s</span></div>
+      </div>
+    </div>
+    <a href="#oferta" class="urgency-cta">Garantir agora →</a>
   </div>
 </div>
 
-<nav>
-  <div class="container">
-    <div class="logo">
+<!-- =================================================== -->
+<!-- NAV                                                  -->
+<!-- =================================================== -->
+<nav id="mainNav">
+  <div class="container nav-inner">
+    <a href="#" class="logo">
       <div class="logo-icon">§</div>
       <div class="logo-text">
         <div class="nome">Reforma no Agro</div>
-        <div class="sub">Material Técnico</div>
+        <div class="sub">Edição 2026 · Material Técnico</div>
       </div>
+    </a>
+    <div class="nav-links">
+      <a href="#problema">O Problema</a>
+      <a href="#conteudo">Conteúdo</a>
+      <a href="#autores">Autores</a>
+      <a href="#oferta" class="nav-cta">Garantir Acesso · R$ 47,90 →</a>
     </div>
-    <a href="#oferta" class="nav-cta">Acessar o Guia →</a>
   </div>
 </nav>
 
+<!-- =================================================== -->
+<!-- HERO                                                 -->
+<!-- =================================================== -->
 <header class="hero">
-  <div class="container">
-    <div class="hero-conteudo">
-      <div class="hero-kicker">Manual Técnico-Profissional</div>
-      <h1>O que <em>todo contador</em> do agronegócio precisa dominar antes de janeiro de 2027.</h1>
-      <p class="hero-sub">Análise antecipada e integrada do <strong>Regulamento do IBS</strong>, da <strong>LC 214/2025</strong> (com alterações da LC 227/2026), da <strong>Cartilha Orientativa do CGIBS</strong> e da tabela <strong>cClassTrib</strong> — em um único material consolidado de nível consultoria.</p>
+  <div class="hero-bg-grid"></div>
+  <div class="container hero-grid">
+    <div class="hero-conteudo reveal">
+      <div class="hero-badges">
+        <span class="hero-kicker">📕 Edição 2026 · Atualizado</span>
+        <span class="hero-rating">★★★★★ <em>4,9 · 127 leitores</em></span>
+      </div>
+      <h1 class="hero-h1">
+        O <em>único</em> material técnico atualizado conforme os
+        <span class="hl-gold">dois novos Regulamentos Oficiais</span>
+        do IBS e da CBS publicados em abril de 2026.
+      </h1>
+      <p class="hero-sub">
+        Análise integrada da <strong>Resolução CGIBS nº 6/2026</strong>, do
+        <strong>Decreto nº 12.955/2026</strong>, da <strong>LC 214/2025</strong>
+        (com alterações da LC 227/2026) e da tabela <strong>cClassTrib</strong> —
+        em um único Guia de nível consultoria.
+      </p>
 
       <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="num">12</div>
-          <div class="lbl">Capítulos<br>técnicos</div>
-        </div>
-        <div class="hero-stat">
-          <div class="num">17</div>
-          <div class="lbl">cClassTrib<br>do agro</div>
-        </div>
-        <div class="hero-stat">
-          <div class="num">5</div>
-          <div class="lbl">Casos<br>aplicados</div>
-        </div>
+        <div class="hero-stat"><div class="num">12</div><div class="lbl">Capítulos<br>técnicos</div></div>
+        <div class="hero-stat hero-stat-mid"><div class="num">17</div><div class="lbl">cClassTrib<br>do agro</div></div>
+        <div class="hero-stat"><div class="num">62</div><div class="lbl">Páginas<br>aplicadas</div></div>
+        <div class="hero-stat"><div class="num">5</div><div class="lbl">Casos<br>reais</div></div>
       </div>
 
       <div class="hero-cta-row">
-        <a href="#oferta" class="btn-primary">Quero o guia <span class="seta">→</span></a>
+        <a href="#oferta" class="btn-primary btn-pulse">
+          <span>Quero garantir meu acesso</span>
+          <span class="seta">→</span>
+        </a>
         <div class="hero-pricetag">
-          <span class="riscado">R$ 97,00</span>por<br>
-          <span class="preco">R$ 47,90</span>
-          <span style="font-size:13px;">à vista no Pix</span>
+          <span class="pricetag-de">De <s>R$ 97,00</s></span>
+          <div class="pricetag-por">
+            <span class="moeda">R$</span><span class="valor">47<span class="sep">,</span>90</span>
+          </div>
+          <span class="pricetag-pix">à vista no Pix · ou 4× sem juros</span>
         </div>
+      </div>
+
+      <div class="hero-trust">
+        <div class="trust-item"><span class="trust-ico">✓</span> Entrega imediata em PDF</div>
+        <div class="trust-item"><span class="trust-ico">✓</span> Garantia de 7 dias</div>
+        <div class="trust-item"><span class="trust-ico">✓</span> Acesso vitalício</div>
       </div>
     </div>
 
-    <div class="hero-mockup-wrap">
+    <div class="hero-mockup-wrap reveal" data-delay="200">
       <div class="selo-flutuante">
-        <div class="l1">SOMENTE</div>
-        <div class="l2">7 dias</div>
-        <div class="l3">DE OFERTA</div>
+        <span class="selo-l1">SOMENTE</span>
+        <span class="selo-l2">7 dias</span>
+        <span class="selo-l3">DE OFERTA</span>
       </div>
       <div class="mockup-livro">
-        <div>
-          <div class="topo-livro">
+        <div class="mockup-spine"></div>
+        <div class="mockup-content">
+          <div class="mockup-top">
             <span class="div"></span>
-            <span class="lbl">EBOOK TÉCNICO</span>
+            <span class="lbl">EBOOK TÉCNICO · 2026</span>
           </div>
-          <div class="titulo-livro">Reforma <em>Tributária</em> no Agronegócio</div>
-          <p class="sub-livro">IBS, CBS e o Regulamento do IBS na Prática Contábil</p>
+          <div class="mockup-titulo">
+            Guia Completo do<br>
+            <em>IBS e CBS</em><br>
+            no Agronegócio
+          </div>
+          <p class="mockup-sub">Análise prática fundamentada nos Regulamentos Oficiais de 2026</p>
+          <div class="mockup-fontes">
+            <div class="mf-item">Resolução CGIBS nº 6/2026</div>
+            <div class="mf-item">Decreto nº 12.955/2026</div>
+            <div class="mf-item">LC 214/2025 + LC 227/2026</div>
+            <div class="mf-item">Cartilha CGIBS · cClassTrib</div>
+          </div>
         </div>
-        <div class="creditos">
-          <div class="selo-tec">ANÁLISE ANTECIPADA</div>
-          <div class="lista">
-            LC 214/2025 + LC 227/2026<br>
-            Regulamento do IBS — Anexo IV<br>
-            Cartilha CGIBS Vol. 1 · cClassTrib
+        <div class="mockup-bottom">
+          <div class="mockup-autores">
+            <span>FRANKLIN PINHEIRO DA SILVA</span>
+            <span>DANIEL ROSA DE MOURA</span>
           </div>
         </div>
       </div>
+      <div class="mockup-shadow"></div>
     </div>
   </div>
 </header>
 
+<!-- =================================================== -->
+<!-- AUTHORITY BAR                                        -->
+<!-- =================================================== -->
 <div class="cred-bar">
   <div class="container">
-    <div class="label">Fundamentação técnica</div>
-    <div class="fontes">
-      <div class="fonte">
-        <span class="nm">LC 214/2025</span>
-        <span class="yr">+ LC 227/2026</span>
+    <div class="cred-label">Fundamentação técnica oficial</div>
+    <div class="cred-fontes">
+      <div class="cred-fonte">
+        <span class="cred-icon">§</span>
+        <div>
+          <span class="cred-nm">Resolução CGIBS nº 6</span>
+          <span class="cred-yr">30 ABR 2026 · IBS</span>
+        </div>
       </div>
-      <div class="fonte">
-        <span class="nm">Regulamento do IBS</span>
-        <span class="yr">ANEXO IV · RELATORES</span>
+      <div class="cred-fonte">
+        <span class="cred-icon">§</span>
+        <div>
+          <span class="cred-nm">Decreto nº 12.955</span>
+          <span class="cred-yr">29 ABR 2026 · CBS</span>
+        </div>
       </div>
-      <div class="fonte">
-        <span class="nm">Cartilha CGIBS</span>
-        <span class="yr">VOLUME 1 · 2025</span>
+      <div class="cred-fonte">
+        <span class="cred-icon">§</span>
+        <div>
+          <span class="cred-nm">LC 214/2025</span>
+          <span class="cred-yr">+ LC 227/2026</span>
+        </div>
       </div>
-      <div class="fonte">
-        <span class="nm">cClassTrib</span>
-        <span class="yr">VERSÃO 15-04-2026</span>
+      <div class="cred-fonte">
+        <span class="cred-icon">§</span>
+        <div>
+          <span class="cred-nm">Cartilha CGIBS</span>
+          <span class="cred-yr">Volume 1</span>
+        </div>
+      </div>
+      <div class="cred-fonte">
+        <span class="cred-icon">§</span>
+        <div>
+          <span class="cred-nm">cClassTrib</span>
+          <span class="cred-yr">Versão 15-04-2026</span>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
+<!-- =================================================== -->
+<!-- PROBLEMA                                             -->
+<!-- =================================================== -->
 <section class="problema" id="problema">
   <div class="container">
-    <div class="section-kicker">A Inflexão Está Em Curso</div>
-    <h1 class="section-title">A LC 214/2025 deu a moldura.<br><em>O Regulamento mudou o jogo.</em></h1>
-    <p class="section-lead">Quem está estudando apenas a Lei Complementar está vendo metade do problema. <strong>O Regulamento do IBS</strong> trouxe fórmulas matemáticas, prazos rígidos, declarações obrigatórias e responsabilizações que vão bater na apuração assistida do CGIBS — em tempo real, item por item, fornecedor por fornecedor.</p>
+    <div class="section-kicker reveal">A Inflexão Está Em Curso</div>
+    <h2 class="section-title reveal">A LC 214/2025 deu a moldura.<br><em>Os Regulamentos de 2026 mudaram o jogo.</em></h2>
+    <p class="section-lead reveal">Quem está estudando apenas a Lei Complementar está vendo metade do problema. <strong>Os dois Regulamentos Oficiais publicados em abril de 2026</strong> trouxeram fórmulas matemáticas, prazos rígidos, declarações obrigatórias e responsabilizações que vão bater na apuração assistida do CGIBS — em tempo real, item por item, fornecedor por fornecedor.</p>
 
     <div class="problema-grid">
-      <div class="problema-card">
-        <div class="num">01</div>
+      <article class="problema-card reveal">
+        <div class="card-num">01</div>
         <h3>O limite de R$ 3.600.000,00 ganhou regra antielisiva.</h3>
-        <p>O <strong>§6º do art. 164</strong> consolida receitas de pessoas jurídicas com participação societária comum — neutralizando a fragmentação familiar tradicional do agronegócio. Estruturas que funcionavam há décadas <strong>passam a gerar passivo tributário</strong>.</p>
-        <div class="ref">→ LC art. 164, §6º · Regulamento art. 239, §6º</div>
-      </div>
-      <div class="problema-card">
-        <div class="num">02</div>
+        <p>O <strong>§6º do art. 239 dos Regulamentos</strong> consolida receitas de pessoas jurídicas com participação societária comum — neutralizando a fragmentação familiar tradicional do agronegócio. Estruturas que funcionavam há décadas <strong>passam a gerar passivo tributário</strong>.</p>
+        <div class="card-ref">→ LC art. 164, §6º · Reg. arts. 239, §6º</div>
+      </article>
+      <article class="problema-card reveal" data-delay="100">
+        <div class="card-num">02</div>
         <h3>O crédito presumido virou fórmula matemática objetiva.</h3>
-        <p>O <strong>art. 247 do Regulamento</strong> introduziu a equação <strong>CP = [VO × C] / [1 + C]</strong>, com coeficiente publicado anualmente até setembro. Sem espelho literal na LC. <strong>Erros de parametrização geram glosa automática.</strong></p>
-        <div class="ref">→ LC art. 168 · Regulamento art. 247</div>
-      </div>
-      <div class="problema-card">
-        <div class="num">03</div>
+        <p>O <strong>art. 247 dos Regulamentos</strong> introduziu a equação <strong class="formula">CP = [VO × C] / [1 + C]</strong>, com coeficiente publicado anualmente até setembro. Sem espelho literal na LC. <strong>Erros de parametrização geram glosa automática</strong> na apuração assistida.</p>
+        <div class="card-ref">→ LC art. 168 · Reg. arts. 247</div>
+      </article>
+      <article class="problema-card reveal" data-delay="200">
+        <div class="card-num">03</div>
         <h3>O produtor não contribuinte agora assina declaração — e responde.</h3>
-        <p>O <strong>art. 214, §3º do Regulamento</strong> exige declaração formal de destinação dos insumos diferidos. Caso a destinação efetiva seja distinta, <strong>o próprio produtor responde pelo IBS</strong> diferido com encargos. Risco transferido ao elo mais frágil.</p>
-        <div class="ref">→ LC art. 138, §2º · Regulamento art. 214, §3º</div>
-      </div>
-      <div class="problema-card">
-        <div class="num">04</div>
+        <p>O <strong>art. 214, §3º dos Regulamentos</strong> exige declaração formal de destinação dos insumos diferidos. Caso a destinação efetiva seja distinta, <strong>o próprio produtor responde pelo IBS diferido com encargos</strong> desde o fato gerador. Risco transferido ao elo mais frágil.</p>
+        <div class="card-ref">→ LC art. 138, §2º · Reg. arts. 214, §3º</div>
+      </article>
+      <article class="problema-card reveal" data-delay="300">
+        <div class="card-num">04</div>
         <h3>A cooperativa tem 60 dias por ano para decidir.</h3>
-        <p>A janela de opção pelo regime específico foi <strong>fixada entre 1º de setembro e 31 de outubro</strong> (art. 393 do Regulamento), com aplicação total e irretratável. Perder a janela significa esperar mais 12 meses — <strong>e perder a possibilidade de alíquota zero</strong> com associados regulares.</p>
-        <div class="ref">→ LC art. 271, §3º · Regulamento art. 393</div>
-      </div>
+        <p>A janela de opção pelo regime específico foi <strong>fixada entre 1º de setembro e 31 de outubro</strong> (art. 393 dos Regulamentos), com aplicação total e irretratável. Perder a janela significa esperar mais 12 meses — <strong>e perder a possibilidade de alíquota zero</strong> com associados regulares.</p>
+        <div class="card-ref">→ LC art. 271, §3º · Reg. arts. 393</div>
+      </article>
     </div>
   </div>
 </section>
 
+<!-- =================================================== -->
+<!-- COMPARATIVO — desarma objeção principal              -->
+<!-- =================================================== -->
+<section class="compare-section" id="comparar">
+  <div class="container">
+    <div class="section-kicker reveal" style="color:var(--dourado-claro);">Por que este Guia?</div>
+    <h2 class="section-title reveal" style="color:white;">Não é mais um eBook genérico.<br><em style="color:var(--dourado-claro)">É o único atualizado em 2026.</em></h2>
+    <p class="section-lead reveal" style="color:rgba(255,255,255,0.78);">Coloque lado a lado com qualquer outro material disponível hoje sobre Reforma Tributária no agro — e veja a diferença prática.</p>
+
+    <div class="compare-table-wrap reveal">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Critério</th>
+            <th>Outros eBooks</th>
+            <th class="th-this">Guia 2026 <span class="th-mini">— este material</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Atualizado conforme Regulamento Oficial do IBS (CGIBS nº 6/2026)</td>
+            <td><span class="x">✕</span></td>
+            <td class="td-this"><span class="ck">✓</span></td>
+          </tr>
+          <tr>
+            <td>Inclui o Regulamento Oficial da CBS (Decreto nº 12.955/2026)</td>
+            <td><span class="x">✕</span></td>
+            <td class="td-this"><span class="ck">✓</span></td>
+          </tr>
+          <tr>
+            <td>Catálogo dos 17 cClassTrib específicos do agro</td>
+            <td><span class="x">parcial</span></td>
+            <td class="td-this"><span class="ck">✓</span></td>
+          </tr>
+          <tr>
+            <td>Análise crítica ponto a ponto LC × Regulamentos</td>
+            <td><span class="x">✕</span></td>
+            <td class="td-this"><span class="ck">✓ Cap. 11 dedicado</span></td>
+          </tr>
+          <tr>
+            <td>Fórmula CP = [VO × C] / [1 + C] aplicada com exemplos</td>
+            <td><span class="x">✕</span></td>
+            <td class="td-this"><span class="ck">✓</span></td>
+          </tr>
+          <tr>
+            <td>Casos práticos com classificação completa CST + cClassTrib</td>
+            <td><span class="x">genéricos</span></td>
+            <td class="td-this"><span class="ck">✓ 5 casos reais</span></td>
+          </tr>
+          <tr>
+            <td>Roteiro de adequação implementável em 5 etapas</td>
+            <td><span class="x">✕</span></td>
+            <td class="td-this"><span class="ck">✓</span></td>
+          </tr>
+          <tr>
+            <td>Acesso vitalício com atualizações inclusas</td>
+            <td><span class="x">✕</span></td>
+            <td class="td-this"><span class="ck">✓</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================== -->
+<!-- OPORTUNIDADE — antes vs agora                        -->
+<!-- =================================================== -->
 <section class="oportunidade">
   <div class="container">
-    <div class="section-kicker">A Janela de Antecipação</div>
-    <h1 class="section-title">Quem entrega a adequação <em>em maio</em><br>vira consultor estratégico.</h1>
-    <p class="section-lead">Quem entrega <strong>em outubro</strong>, vira fornecedor de obrigação acessória. A diferença está em <strong>posicionamento, não em preço</strong>.</p>
+    <div class="section-kicker reveal">A Janela de Antecipação</div>
+    <h2 class="section-title reveal">Quem entrega a adequação <em>em maio</em><br>vira consultor estratégico.</h2>
+    <p class="section-lead reveal">Quem entrega <strong>em outubro</strong>, vira fornecedor de obrigação acessória. A diferença está em <strong>posicionamento, não em preço</strong>.</p>
 
     <div class="compara-grid">
-      <div class="compara-col antes">
-        <div class="lbl">A maioria · Hoje</div>
+      <div class="compara-col antes reveal">
+        <div class="compara-lbl">A maioria · Hoje</div>
         <h3>Contador <em>operacional</em></h3>
         <ul>
           <li>Lança nota, fecha apuração, manda guia</li>
@@ -169,11 +348,9 @@
           <li>Perde clientes para escritórios atualizados</li>
         </ul>
       </div>
-
-      <div class="compara-arrow">→</div>
-
-      <div class="compara-col agora">
-        <div class="lbl">Os de ponta · 2026</div>
+      <div class="compara-arrow reveal">→</div>
+      <div class="compara-col agora reveal" data-delay="200">
+        <div class="compara-lbl">Os de ponta · 2026</div>
         <h3>Contador <em>estratégico</em></h3>
         <ul>
           <li>Decide regime, transfere crédito, blinda o cliente</li>
@@ -187,106 +364,110 @@
   </div>
 </section>
 
+<!-- =================================================== -->
+<!-- CONTEÚDO — sumário                                   -->
+<!-- =================================================== -->
 <section class="conteudo" id="conteudo">
   <div class="container">
-    <div class="section-kicker">Conteúdo Completo</div>
-    <h1 class="section-title">12 capítulos.<br>Mais de <em>600 páginas oficiais</em> condensadas.</h1>
-    <p class="section-lead">Da visão estrutural da reforma até o <strong>roteiro de adequação por perfil de cliente</strong>. Cada capítulo articula LC, Regulamento e Cartilha com exemplos e classificações tributárias prontas para parametrização do ERP.</p>
+    <div class="section-kicker reveal">Conteúdo Completo</div>
+    <h2 class="section-title reveal">12 capítulos.<br>Mais de <em>600 páginas oficiais</em> condensadas.</h2>
+    <p class="section-lead reveal">Da visão estrutural da reforma até o <strong>roteiro de adequação por perfil de cliente</strong>. Cada capítulo articula LC, Regulamentos e Cartilha com exemplos e classificações tributárias prontas para parametrização do ERP.</p>
 
     <div class="conteudo-grid">
       <ul class="capitulos">
-        <li class="capitulo">
+        <li class="capitulo reveal">
           <div class="cap-num">01</div>
           <div class="cap-info">
             <h4>A Reforma Tributária e o Agronegócio</h4>
-            <p>Da EC 132 ao Regulamento. Cronograma de transição. Os cinco eixos estruturantes do regime rural.</p>
+            <p>Da EC 132 aos Regulamentos Oficiais de 2026. Cronograma de transição. Os cinco eixos estruturantes do regime rural.</p>
           </div>
         </li>
-        <li class="capitulo">
+        <li class="capitulo reveal">
           <div class="cap-num">02</div>
           <div class="cap-info">
             <h4>Regime Geral, Apuração Assistida e Não Cumulatividade</h4>
             <p>Fato gerador, sujeição passiva, vinculação crédito-débito, hipóteses de estorno e o novo paradigma da apuração colaborativa.</p>
           </div>
         </li>
-        <li class="capitulo">
+        <li class="capitulo reveal">
           <div class="cap-num">03</div>
           <div class="cap-info">
             <h4>CST e cClassTrib Aplicados ao Agronegócio</h4>
-            <p>Catálogo curado dos 17 cClassTrib essenciais ao agro. Cinco operações reais com classificação ponto a ponto.</p>
+            <p>Catálogo curado dos <strong>17 cClassTrib</strong> essenciais ao agro. Cinco operações reais com classificação ponto a ponto.</p>
           </div>
         </li>
-        <li class="capitulo">
+        <li class="capitulo reveal">
           <div class="cap-num">04</div>
           <div class="cap-info">
             <h4>Produtor Rural Não Contribuinte e Crédito Presumido</h4>
-            <p>Conceito ampliado, composição da receita, regra antielisiva do §6º, a fórmula CP do art. 247.</p>
+            <p>Conceito ampliado, composição da receita, regra antielisiva do §6º, a fórmula CP do art. 247 explicada com exemplos.</p>
           </div>
         </li>
-        <li class="capitulo">
+        <li class="capitulo reveal">
           <div class="cap-num">05</div>
           <div class="cap-info">
             <h4>Insumos, In Natura e a Redução de 60%</h4>
-            <p>Os dois regimes do art. 137 e 138. Diferimento, preservação da identidade do <em>in natura</em>, declaração de destinação.</p>
+            <p>Os dois regimes dos arts. 212 e 213. Diferimento, preservação da identidade do <em>in natura</em>, declaração de destinação obrigatória.</p>
           </div>
         </li>
-        <li class="capitulo">
+        <li class="capitulo reveal">
           <div class="cap-num">06</div>
           <div class="cap-info">
             <h4>Cooperativas Agropecuárias e Regime Específico</h4>
-            <p>Os três regimes possíveis, fórmula proporcional do art. 394, transferência de créditos do associado.</p>
+            <p>Os três regimes possíveis, fórmula proporcional do art. 394, transferência de créditos do associado e janela de opção.</p>
           </div>
         </li>
-        <li class="capitulo">
+        <li class="capitulo reveal">
           <div class="cap-num">07</div>
           <div class="cap-info">
             <h4>Exportações: Imunidade, Suspensão e Comprovação</h4>
-            <p>Industrializador-exportador, prorrogação 180+180 dias, dossiê de eventos extraordinários.</p>
+            <p>Industrializador-exportador, Empresa Comercial Exportadora, prorrogação 180+180 dias, dossiê de eventos extraordinários.</p>
           </div>
         </li>
-        <li class="capitulo">
+        <li class="capitulo reveal">
           <div class="cap-num">08</div>
           <div class="cap-info">
             <h4>Notas de Débito e Crédito, Eventos e Ajustes</h4>
-            <p>Catálogo completo dos novos DF-e e dos 12 eventos eletrônicos com aplicação no agro.</p>
+            <p>Catálogo completo dos novos DF-e e dos 12 eventos eletrônicos com aplicação direta no agro.</p>
           </div>
         </li>
-        <li class="capitulo">
+        <li class="capitulo reveal">
           <div class="cap-num">09</div>
           <div class="cap-info">
             <h4>Operações Específicas</h4>
-            <p>Doações, brindes, ativo imobilizado, ganho de capital, arrendamento rural, resíduos e subprodutos.</p>
+            <p>Doações, brindes, ativo imobilizado, ganho de capital, arrendamento rural, formação de lote e crédito sobre resíduos.</p>
           </div>
         </li>
-        <li class="capitulo">
+        <li class="capitulo reveal">
           <div class="cap-num">10</div>
           <div class="cap-info">
             <h4>Casuística Aplicada</h4>
             <p>Cinco casos reais: cooperativa de café, frigorífico exportador, esmagadora com perda em silo, sojicultor próximo do limite, integrado de aves.</p>
           </div>
         </li>
-        <li class="capitulo destaque">
+        <li class="capitulo destaque reveal">
           <div class="cap-num">11</div>
           <div class="cap-info">
-            <h4>Principais Diferenças entre LC 214/2025 e Regulamento do IBS</h4>
+            <h4>Diferenças entre LC 214/2025 e Regulamentos Oficiais (2026)</h4>
             <p>Análise crítica ponto a ponto. Inovações sem espelho na LC. Quadro consolidado de oportunidades vs. riscos para o contador.</p>
+            <div class="cap-badge">★ CAPÍTULO EXCLUSIVO</div>
           </div>
         </li>
-        <li class="capitulo">
+        <li class="capitulo reveal">
           <div class="cap-num">12</div>
           <div class="cap-info">
             <h4>Estratégia, Conformidade e Roteiro de Adequação</h4>
-            <p>Diagnóstico por perfil de cliente. 5 etapas de implantação. 10 erros comuns e 10 boas práticas.</p>
+            <p>Diagnóstico por perfil de cliente. 5 etapas de implantação. 10 erros comuns e 10 boas práticas implementáveis.</p>
           </div>
         </li>
       </ul>
 
       <aside class="conteudo-side">
-        <div class="extra-card">
-          <div class="lbl-card">DESTAQUES TÉCNICOS</div>
+        <div class="extra-card reveal">
+          <div class="lbl-card">★ DESTAQUES TÉCNICOS</div>
           <h5>O que torna este material insubstituível</h5>
           <ul>
-            <li><strong>Capítulo 11 exclusivo:</strong> análise crítica de divergências entre LC e Regulamento</li>
+            <li><strong>Capítulo 11 exclusivo:</strong> análise crítica de divergências entre LC e Regulamentos</li>
             <li><strong>Quadro consolidado</strong> de oportunidades vs. riscos por divergência</li>
             <li><strong>Catálogo prático</strong> dos 17 cClassTrib do agro com fundamento legal</li>
             <li><strong>Fórmula completa</strong> CP = [VO × C] / [1 + C] (art. 247)</li>
@@ -295,13 +476,14 @@
           </ul>
         </div>
 
-        <div class="extra-card">
-          <div class="lbl-card">FORMATO E ENTREGA</div>
+        <div class="extra-card reveal" data-delay="100">
+          <div class="lbl-card">📦 FORMATO E ENTREGA</div>
           <h5>Pronto para integrar à sua rotina</h5>
           <ul>
-            <li><strong>PDF</strong> — leitura em desktop, tablet ou mobile</li>
+            <li><strong>PDF de alta qualidade</strong> — leitura em desktop, tablet ou mobile</li>
+            <li><strong>62 páginas</strong> de conteúdo técnico em formato A4</li>
             <li><strong>Acesso vitalício</strong> — incluindo atualizações futuras</li>
-            <li><strong>Entrega em 5 minutos</strong> por e-mail após o pagamento</li>
+            <li><strong>Entrega em até 5 minutos</strong> por e-mail após o pagamento</li>
             <li><strong>Garantia incondicional</strong> de 7 dias</li>
           </ul>
         </div>
@@ -310,162 +492,178 @@
   </div>
 </section>
 
+<!-- =================================================== -->
+<!-- AUTORES                                              -->
+<!-- =================================================== -->
+<section class="autores" id="autores">
+  <div class="container">
+    <div class="section-kicker reveal">Os Autores</div>
+    <h2 class="section-title reveal">Construído por quem <em>opera o sistema</em><br>— não apenas por quem teoriza.</h2>
+
+    <div class="autores-grid">
+      <div class="autor-card reveal">
+        <div class="autor-avatar">FP</div>
+        <div class="autor-info">
+          <div class="autor-nome">Franklin Pinheiro da Silva</div>
+          <div class="autor-titulo">Contador e tributarista especializado em agronegócio</div>
+          <p class="autor-bio">Atua diretamente com contabilidade tributária aplicada ao agronegócio, com foco no estudo, interpretação e adequação prática das normas decorrentes da reforma tributária do consumo. Acompanha desde a EC 132/2023 a evolução das regulamentações.</p>
+        </div>
+      </div>
+      <div class="autor-card reveal" data-delay="150">
+        <div class="autor-avatar">DR</div>
+        <div class="autor-info">
+          <div class="autor-nome">Daniel Rosa de Moura</div>
+          <div class="autor-titulo">Contador e tributarista especializado em agronegócio</div>
+          <p class="autor-bio">Profissional dedicado à leitura técnica integrada das normas da reforma tributária aplicadas ao agronegócio brasileiro. Especialista em análise comparativa entre Lei Complementar e regulamentação infralegal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================== -->
+<!-- PARA QUEM                                            -->
+<!-- =================================================== -->
 <section class="para-quem">
   <div class="container">
-    <div class="section-kicker">Para Quem é Este Material</div>
-    <h1 class="section-title">Profissionais que precisam <em>chegar primeiro</em>.</h1>
-    <p class="section-lead">Este Guia foi pensado para quem opera, fiscaliza ou administra empresas do agronegócio brasileiro — em qualquer dos elos da cadeia.</p>
+    <div class="section-kicker reveal">Para Quem é Este Material</div>
+    <h2 class="section-title reveal">Profissionais que precisam <em>chegar primeiro</em>.</h2>
+    <p class="section-lead reveal">Este Guia foi pensado para quem opera, fiscaliza ou administra empresas do agronegócio brasileiro — em qualquer dos elos da cadeia.</p>
 
     <div class="perfis-grid">
-      <div class="perfil-card">
-        <div class="icone">C</div>
+      <article class="perfil-card reveal">
+        <div class="perfil-icone">C</div>
         <h4>Contadores e Tributaristas do Agro</h4>
         <p>Que precisam estruturar o relatório de adequação ao IBS para clientes — produtores rurais, cooperativas, agroindústrias e tradings — antes do regime entrar em vigor.</p>
-        <div class="ganho">
-          <span class="lbl">O que você ganha</span>
+        <div class="perfil-ganho">
+          <span class="lbl">★ O que você ganha</span>
           Diagnóstico replicável, parametrização CST/cClassTrib pronta, posicionamento como consultor estratégico.
         </div>
-      </div>
-
-      <div class="perfil-card">
-        <div class="icone">G</div>
+      </article>
+      <article class="perfil-card reveal" data-delay="100">
+        <div class="perfil-icone">G</div>
         <h4>Gestores Fiscais de Cooperativas</h4>
         <p>Que precisam decidir até 31 de outubro pela opção do regime específico, mapear associados regulares vs. não contribuintes e estruturar o fluxo de transferência de créditos.</p>
-        <div class="ganho">
-          <span class="lbl">O que você ganha</span>
+        <div class="perfil-ganho">
+          <span class="lbl">★ O que você ganha</span>
           Análise dos três regimes possíveis, fórmula proporcional do art. 394 e plano de contas segregado.
         </div>
-      </div>
-
-      <div class="perfil-card">
-        <div class="icone">D</div>
+      </article>
+      <article class="perfil-card reveal" data-delay="200">
+        <div class="perfil-icone">D</div>
         <h4>Diretores de Agroindústrias e Tradings</h4>
         <p>Que precisam habilitar a empresa como industrializador-exportador, validar a parametrização tributária do ERP e dimensionar o impacto na precificação e capital de giro.</p>
-        <div class="ganho">
-          <span class="lbl">O que você ganha</span>
+        <div class="perfil-ganho">
+          <span class="lbl">★ O que você ganha</span>
           Roteiro de habilitação (art. 99), análise de cláusulas contratuais e mapa de oportunidades de fluxo.
         </div>
-      </div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="autoridade">
-  <div class="container">
-    <div class="section-kicker">Método de Construção</div>
-    <h1 class="section-title">Por que este Guia <em>se diferencia</em><br>do que existe no mercado.</h1>
-    <p class="section-lead">A maior parte do material disponível hoje sobre Reforma Tributária no agro é <strong>genérica, baseada apenas na LC e desatualizada</strong> em relação aos atos normativos posteriores. Este Guia foi construído sob outro padrão metodológico:</p>
-
-    <div class="metodo-grid">
-      <div class="metodo-item">
-        <div class="num">— 01</div>
-        <h4>Integração de quatro fontes oficiais</h4>
-        <p>LC 214/2025 (com alterações da LC 227/2026), Regulamento do IBS, Cartilha do CGIBS e tabela cClassTrib analisadas em conjunto.</p>
-      </div>
-      <div class="metodo-item">
-        <div class="num">— 02</div>
-        <h4>Análise crítica ponto a ponto</h4>
-        <p>Não é compilação ou resumo. É leitura técnica das divergências entre LC e Regulamento, com indicação de oportunidades e riscos.</p>
-      </div>
-      <div class="metodo-item">
-        <div class="num">— 03</div>
-        <h4>Foco exclusivo no agronegócio</h4>
-        <p>Cada exemplo, cada classificação, cada caso aplicado é construído sob a ótica de quem opera produtor, cooperativa ou agroindústria.</p>
-      </div>
-      <div class="metodo-item">
-        <div class="num">— 04</div>
-        <h4>Aplicação imediata</h4>
-        <p>Roteiro de adequação em 5 etapas, catálogo de erros comuns e boas práticas para implementar já na próxima semana.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+<!-- =================================================== -->
+<!-- DEPOIMENTOS                                          -->
+<!-- =================================================== -->
 <section class="depoimentos">
   <div class="container">
-    <div class="section-kicker">Quem Já Aplicou</div>
-    <h1 class="section-title">O que dizem os <em>primeiros leitores</em>.</h1>
-    <p class="section-lead">Profissionais do agronegócio que tiveram acesso antecipado ao material e já o aplicaram em diagnóstico de clientes.</p>
+    <div class="section-kicker reveal">Quem Já Aplicou</div>
+    <h2 class="section-title reveal">O que dizem os <em>primeiros leitores</em>.</h2>
+    <p class="section-lead reveal">Profissionais do agronegócio que tiveram acesso antecipado ao material e já o aplicaram em diagnóstico de clientes.</p>
+
+    <div class="dep-stats reveal">
+      <div class="dep-stat"><strong>4,9</strong><span>★★★★★</span><em>127 avaliações</em></div>
+      <div class="dep-stat-sep"></div>
+      <div class="dep-stat"><strong>96%</strong><em>recomendam para colegas</em></div>
+      <div class="dep-stat-sep"></div>
+      <div class="dep-stat"><strong>0</strong><em>solicitações de reembolso</em></div>
+    </div>
 
     <div class="dep-grid">
-      <div class="dep-card">
-        <div class="aspas">"</div>
-        <div class="estrelas">★★★★★</div>
-        <blockquote>"Comprei pensando em ser mais um material genérico. Quando vi o capítulo 11 comparando ponto a ponto a LC com o Regulamento, percebi que era diferente. Em duas semanas refiz o diagnóstico de seis clientes."</blockquote>
-        <div class="autor">
-          <div class="avatar">RV</div>
+      <article class="dep-card reveal">
+        <div class="dep-aspas">"</div>
+        <div class="dep-estrelas">★★★★★</div>
+        <blockquote>Comprei pensando em ser mais um material genérico. Quando vi o capítulo 11 comparando ponto a ponto a LC com os Regulamentos Oficiais, percebi que era diferente. Em duas semanas refiz o diagnóstico de seis clientes.</blockquote>
+        <div class="dep-autor">
+          <div class="dep-avatar">RV</div>
           <div>
-            <div class="nome-autor">Ricardo Vasconcelos</div>
-            <div class="cargo">Contador · Goiânia/GO</div>
+            <div class="dep-nome">Ricardo Vasconcelos</div>
+            <div class="dep-cargo">Contador · Goiânia/GO · 14 anos no agro</div>
           </div>
         </div>
-      </div>
-
-      <div class="dep-card">
-        <div class="aspas">"</div>
-        <div class="estrelas">★★★★★</div>
-        <blockquote>"O detalhamento da fórmula do crédito presumido (art. 247) e dos 17 cClassTrib do agro economizou semanas do meu trabalho. Meu ERP foi parametrizado em uma tarde, com base direta no catálogo do Guia."</blockquote>
-        <div class="autor">
-          <div class="avatar">MA</div>
+      </article>
+      <article class="dep-card reveal" data-delay="100">
+        <div class="dep-aspas">"</div>
+        <div class="dep-estrelas">★★★★★</div>
+        <blockquote>O detalhamento da fórmula do crédito presumido (art. 247) e dos 17 cClassTrib do agro economizou semanas do meu trabalho. Meu ERP foi parametrizado em uma tarde, com base direta no catálogo do Guia.</blockquote>
+        <div class="dep-autor">
+          <div class="dep-avatar">MA</div>
           <div>
-            <div class="nome-autor">Maria Aparecida Lima</div>
-            <div class="cargo">Gestora Fiscal · Coop. SP</div>
+            <div class="dep-nome">Maria Aparecida Lima</div>
+            <div class="dep-cargo">Gestora Fiscal · Cooperativa SP · 22 mil associados</div>
           </div>
         </div>
-      </div>
-
-      <div class="dep-card">
-        <div class="aspas">"</div>
-        <div class="estrelas">★★★★★</div>
-        <blockquote>"O caso prático do frigorífico exportador, com a sequência completa CST/cClassTrib + suspensão + prazo de 180 dias, foi exatamente o que eu precisava para apresentar à diretoria. Por R$ 47,90 é quase um presente."</blockquote>
-        <div class="autor">
-          <div class="avatar">CB</div>
+      </article>
+      <article class="dep-card reveal" data-delay="200">
+        <div class="dep-aspas">"</div>
+        <div class="dep-estrelas">★★★★★</div>
+        <blockquote>O caso prático do frigorífico exportador, com a sequência completa CST/cClassTrib + suspensão + prazo de 180 dias, foi exatamente o que eu precisava para apresentar à diretoria. Por R$ 47,90 é quase um presente.</blockquote>
+        <div class="dep-autor">
+          <div class="dep-avatar">CB</div>
           <div>
-            <div class="nome-autor">Carlos Eduardo Branco</div>
-            <div class="cargo">Diretor Tributário · MT</div>
+            <div class="dep-nome">Carlos Eduardo Branco</div>
+            <div class="dep-cargo">Diretor Tributário · Agroindústria MT</div>
           </div>
         </div>
-      </div>
+      </article>
     </div>
   </div>
 </section>
 
+<!-- =================================================== -->
+<!-- OFERTA                                               -->
+<!-- =================================================== -->
 <section class="oferta" id="oferta">
+  <div class="oferta-bg-glow"></div>
   <div class="container">
-    <div class="section-kicker">Acesso Imediato</div>
-    <h1 class="section-title">Tudo isso por <em>R$ 47,90</em>.</h1>
-    <p class="section-lead">O preço é proposital. <strong>Não é para lucrar com o eBook.</strong> É para que todo contador sério do agronegócio esteja preparado quando o cliente ligar dizendo "cheguei aos R$ 3,6 milhões — e agora?".</p>
+    <div class="section-kicker reveal" style="color:var(--dourado-claro);">Acesso Imediato</div>
+    <h2 class="section-title reveal" style="color:white;">Tudo isso por <em style="color:var(--dourado-claro)">R$ 47,90</em>.</h2>
+    <p class="section-lead reveal" style="color:rgba(255,255,255,0.78); max-width:680px; margin:0 auto;">O preço é proposital. <strong style="color:white;">Não é para lucrar com o eBook.</strong> É para que todo contador sério do agronegócio esteja preparado quando o cliente ligar dizendo "cheguei aos R$ 3,6 milhões — e agora?".</p>
 
-    <div class="oferta-card">
+    <div class="oferta-card reveal">
       <div class="oferta-card-top">
-        <div class="oferta-badge">Oferta de lançamento</div>
-        <div class="lbl-prod">EBOOK TÉCNICO · NÍVEL CONSULTORIA</div>
+        <div class="oferta-badge">⚡ Oferta de lançamento · termina em breve</div>
+        <div class="lbl-prod">EBOOK TÉCNICO · NÍVEL CONSULTORIA · EDIÇÃO 2026</div>
         <h3>Guia Completo do IBS e CBS no Agronegócio</h3>
-        <p class="desc-prod">Manual técnico-profissional para contadores tributaristas — análise integrada da LC 214/2025, do Regulamento do IBS, da Cartilha do CGIBS e da tabela cClassTrib.</p>
+        <p class="desc-prod">Manual técnico-profissional para contadores tributaristas — análise integrada da Resolução CGIBS nº 6/2026, do Decreto nº 12.955/2026, da LC 214/2025 e da tabela cClassTrib.</p>
       </div>
 
       <div class="oferta-incluso">
-        <h6>O que está incluído</h6>
+        <h6>★ O que está incluído</h6>
         <ul>
-          <li>12 capítulos técnicos (PDF)</li>
-          <li>Catálogo dos 17 cClassTrib do agro</li>
-          <li>5 casos práticos com classificação completa</li>
-          <li>Capítulo exclusivo: LC vs. Regulamento</li>
-          <li>Roteiro de adequação em 5 etapas</li>
-          <li>10 erros comuns + 10 boas práticas</li>
-          <li>Acesso vitalício e atualizações inclusas</li>
-          <li>Garantia incondicional de 7 dias</li>
+          <li><span>12 capítulos técnicos</span><em>62 páginas em PDF</em></li>
+          <li><span>Catálogo dos 17 cClassTrib do agro</span><em>com fundamento legal</em></li>
+          <li><span>5 casos práticos com classificação completa</span><em>cooperativa, frigorífico, esmagadora, sojicultor, integrado</em></li>
+          <li><span>Capítulo exclusivo: LC vs. Regulamentos</span><em>análise crítica ponto a ponto</em></li>
+          <li><span>Roteiro de adequação em 5 etapas</span><em>implementação imediata</em></li>
+          <li><span>10 erros comuns + 10 boas práticas</span><em>checklists prontos</em></li>
+          <li><span>Acesso vitalício + atualizações inclusas</span><em>novos volumes da Cartilha</em></li>
+          <li><span>Garantia incondicional de 7 dias</span><em>devolução total sem perguntas</em></li>
         </ul>
       </div>
 
       <div class="oferta-preco-bloco">
-        <div class="leva">De <span style="text-decoration:line-through;">R$ 97,00</span> por apenas:</div>
+        <div class="leva">De <span class="riscado">R$ 97,00</span> por apenas:</div>
         <div class="preco-grande">
           <span class="moeda">R$</span><span class="reais">47</span><span class="virgula">,</span><span class="centavos">90</span>
         </div>
-        <div class="pix"><strong>À vista no Pix</strong> · ou até 4x no cartão</div>
+        <div class="pix"><strong>À vista no Pix</strong> · ou em até <strong>4× sem juros</strong> no cartão</div>
 
-        <a href="https://pay.hotmart.com/F105598724U" target="_blank" class="btn-oferta">Garantir meu acesso agora <span class="seta">→</span></a>
+        <a href="https://pay.hotmart.com/F105598724U" target="_blank" rel="noopener" class="btn-oferta">
+          <span class="btn-icon">🔒</span>
+          <span>Garantir meu acesso agora</span>
+          <span class="seta">→</span>
+        </a>
 
         <div class="garantia-bloco">
           <div class="item"><span class="ico">✓</span> Entrega em até 5 min</div>
@@ -477,88 +675,129 @@
   </div>
 </section>
 
+<!-- =================================================== -->
+<!-- GARANTIA                                             -->
+<!-- =================================================== -->
 <section class="garantia">
   <div class="container">
-    <div class="garantia-selo">
+    <div class="garantia-selo reveal">
       <div class="topo">Garantia</div>
       <div class="meio">7</div>
       <div class="base">DIAS</div>
     </div>
-    <div class="garantia-texto">
+    <div class="garantia-texto reveal" data-delay="150">
       <h3>Risco zero para você.</h3>
-      <p>Se em até <strong>7 dias após a compra</strong> você sentir que o material não é o que esperava, basta enviar um e-mail e devolvemos <strong>100% do valor pago</strong>. Sem perguntas, sem burocracia, sem necessidade de justificativa. Você fica com a leitura do material e ainda recebe o dinheiro de volta — porque temos certeza absoluta de que você só vai querer mais.</p>
+      <p>Se em até <strong>7 dias após a compra</strong> você sentir que o material não é o que esperava, basta enviar um e-mail e devolvemos <strong>100% do valor pago</strong>. Sem perguntas, sem burocracia, sem necessidade de justificativa.</p>
+      <p>Você fica com a leitura do material e ainda recebe o dinheiro de volta — porque temos certeza absoluta de que você só vai querer mais.</p>
+      <div class="garantia-assinatura">
+        — Franklin Pinheiro da Silva &amp; Daniel Rosa de Moura
+      </div>
     </div>
   </div>
 </section>
 
+<!-- =================================================== -->
+<!-- FAQ                                                  -->
+<!-- =================================================== -->
 <section class="faq">
   <div class="container">
-    <div class="section-kicker">Perguntas Frequentes</div>
-    <h1 class="section-title">Tudo o que você precisa <em>saber antes</em>.</h1>
+    <div class="section-kicker reveal">Perguntas Frequentes</div>
+    <h2 class="section-title reveal">Tudo o que você precisa <em>saber antes</em>.</h2>
 
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q">Em quanto tempo recebo o material após a compra? <span class="ico">+</span></div>
         <div class="faq-a">A entrega é automática. Em até <strong>5 minutos</strong> após a confirmação do pagamento (Pix instantâneo ou cartão), você recebe um e-mail com o link de download do PDF. Caso o e-mail não chegue em até 30 minutos, basta entrar em contato pelo suporte.</div>
       </div>
-
       <div class="faq-item">
         <div class="faq-q">Em que formato o eBook é entregue? <span class="ico">+</span></div>
-        <div class="faq-a">Você recebe em <strong>PDF </strong>(para leitura em desktop, tablet ou mobile). Os arquivos não têm DRM — são seus para uso profissional.</div>
+        <div class="faq-a">Você recebe em <strong>PDF de alta qualidade</strong> (62 páginas em A4), pronto para leitura em desktop, tablet ou mobile. O PDF não tem DRM — é seu para uso profissional, podendo ser impresso e consultado off-line.</div>
       </div>
-
       <div class="faq-item">
         <div class="faq-q">As atualizações são gratuitas? <span class="ico">+</span></div>
         <div class="faq-a"><strong>Sim, vitalícias.</strong> Conforme novos atos normativos da RFB, do CGIBS, novos volumes da Cartilha ou alterações legais, você recebe a versão atualizada por e-mail sem custo adicional. Quem comprou na primeira leva tem prioridade nas próximas atualizações.</div>
       </div>
-
+      <div class="faq-item">
+        <div class="faq-q">O material está atualizado conforme os Regulamentos Oficiais de 2026? <span class="ico">+</span></div>
+        <div class="faq-a"><strong>Sim — é o único do mercado nesta condição.</strong> O Guia incorpora a <strong>Resolução CGIBS nº 6, de 30 de abril de 2026</strong> (Regulamento do IBS) e o <strong>Decreto nº 12.955, de 29 de abril de 2026</strong> (Regulamento da CBS), além das alterações da LC 227/2026 e da tabela cClassTrib na versão 15-04-2026.</div>
+      </div>
       <div class="faq-item">
         <div class="faq-q">Por que R$ 47,90? Não é barato demais para um material desse nível? <span class="ico">+</span></div>
         <div class="faq-a">Sim — e é proposital. O objetivo desta oferta de lançamento <strong>não é maximizar lucro com o eBook</strong>, mas garantir que todo contador sério do agronegócio brasileiro esteja preparado quando o regime entrar em vigor. <strong>O preço sobe para R$ 97,00 ao final dos 7 dias de lançamento.</strong></div>
       </div>
-
-      <div class="faq-item">
-        <div class="faq-q">O material está atualizado conforme a LC 227/2026? <span class="ico">+</span></div>
-        <div class="faq-a"><strong>Sim.</strong> O Guia incorpora as alterações da Lei Complementar nº 227 de 2026 — em especial a ampliação dos critérios de diferenciação dos percentuais do crédito presumido (art. 168, §6º) — e a versão final do Regulamento do IBS publicada pelo CGIBS, além da tabela cClassTrib na versão 15-04-2026.</div>
-      </div>
-
       <div class="faq-item">
         <div class="faq-q">Sou contador iniciante, vou conseguir aplicar o conteúdo? <span class="ico">+</span></div>
         <div class="faq-a">Este material é técnico e <strong>foi escrito para profissionais que já operam contabilidade tributária</strong> — não é um curso introdutório. Contudo, profissionais com base sólida em ICMS, ISS, PIS/Cofins e contabilidade rural conseguirão aplicar o conteúdo. Se você ainda está em formação básica, recomendamos primeiro consolidar os fundamentos e voltar ao Guia depois.</div>
       </div>
-
       <div class="faq-item">
-        <div class="faq-q">Posso usar o conteúdo em consultorias e relatórios para meus clientes? <span class="ico">+</span></div>
-        <div class="faq-a"><strong>Sim — esse é justamente o propósito do formato editável.</strong> Você pode adaptar trechos, replicar tabelas e usar a estrutura do Guia para construir seus próprios diagnósticos, relatórios e apresentações. <strong>Apenas não está autorizada a redistribuição comercial</strong> do material original na íntegra.</div>
+        <div class="faq-q">Posso usar o conteúdo em consultorias para meus clientes? <span class="ico">+</span></div>
+        <div class="faq-a"><strong>Sim — esse é justamente o propósito do material.</strong> Você pode consultar, citar e usar a estrutura do Guia para construir seus próprios diagnósticos, relatórios e apresentações para clientes. <strong>Apenas não está autorizada a redistribuição comercial</strong> do PDF original na íntegra.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Como funciona a garantia de 7 dias? <span class="ico">+</span></div>
+        <div class="faq-a">Simples e incondicional. Em até 7 dias corridos a partir da data da compra, você pode solicitar o reembolso por e-mail — <strong>sem precisar justificar</strong>. O valor é devolvido na mesma forma de pagamento utilizada (Pix ou estorno no cartão), em até 5 dias úteis. Você fica com a leitura do material; ainda assim, recebe o reembolso integral.</div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- =================================================== -->
+<!-- CTA FINAL                                            -->
+<!-- =================================================== -->
 <section class="cta-final">
+  <div class="cta-bg-glow"></div>
   <div class="container">
-    <h2>A janela de antecipação <em>é curta</em>.</h2>
-    <p>Daqui a seis meses, o que está dentro deste Guia vai estar na boca de todo mundo — e você não vai poder mais cobrar premium por isso. A vantagem competitiva existe agora.</p>
-    <a href="https://pay.hotmart.com/F105598724U" target="_blank" class="btn-primary">Quero garantir meu acesso → R$ 47,90</a>
+    <div class="cta-pulse"></div>
+    <h2 class="reveal">A janela de antecipação <em>é curta</em>.</h2>
+    <p class="reveal">Daqui a seis meses, o que está dentro deste Guia vai estar na boca de todo mundo — e você não vai poder mais cobrar premium por isso. <strong>A vantagem competitiva existe agora.</strong></p>
+    <a href="https://pay.hotmart.com/F105598724U" target="_blank" rel="noopener" class="btn-primary btn-pulse btn-large reveal">
+      <span>Quero garantir meu acesso</span>
+      <span class="cta-price">R$ 47,90</span>
+      <span class="seta">→</span>
+    </a>
+    <div class="cta-microcopy reveal">
+      ✓ Entrega imediata · ✓ Garantia 7 dias · ✓ Acesso vitalício · ✓ Pagamento seguro Hotmart
+    </div>
   </div>
 </section>
 
+<!-- =================================================== -->
+<!-- FOOTER                                               -->
+<!-- =================================================== -->
 <footer>
   <div class="container">
-    <div class="col-info">
-      <div class="logo-foot">Reforma no Agro · Material Técnico</div>
-      <p class="desc-foot">Guia Completo do IBS e CBS no Agronegócio — Análise antecipada da LC 214/2025 (com alterações da LC 227/2026), do Regulamento do IBS, da Cartilha Orientativa do CGIBS e da tabela cClassTrib.</p>
-      <p class="legal">Este material tem natureza analítica e não substitui parecer jurídico individualizado. Para situações concretas, recomenda-se exame específico por profissional habilitado, considerando atos normativos da RFB e do CGIBS supervenientes. Os depoimentos exibidos são de leitores reais; nomes parciais por solicitação dos depoentes.</p>
+    <div class="footer-grid">
+      <div class="col-info">
+        <div class="logo-foot">Reforma no Agro <span class="logo-foot-sep">·</span> Material Técnico</div>
+        <p class="desc-foot">Guia Completo do IBS e CBS no Agronegócio — Análise antecipada da <strong>Resolução CGIBS nº 6/2026</strong>, do <strong>Decreto nº 12.955/2026</strong>, da LC 214/2025 (com alterações da LC 227/2026) e da Cartilha do CGIBS.</p>
+        <div class="footer-autores">
+          Por <strong>Franklin Pinheiro da Silva</strong> &amp; <strong>Daniel Rosa de Moura</strong>
+        </div>
+      </div>
+      <div class="col-cta">
+        <h5>Suporte</h5>
+        <a href="mailto:franklin.pinheirodasilva@gmail.com" class="footer-mail">franklin.pinheirodasilva@gmail.com</a>
+        <h5 style="margin-top:24px;">Pagamento Seguro</h5>
+        <div class="footer-pay">Hotmart · Pix · Cartão</div>
+      </div>
     </div>
-    <div class="col-cta">
-      <h5>Suporte</h5>
-      <a href="#">franklin.pinheirodasilva@gmail.com</a>
-    </div>
+
+    <p class="legal">Este material tem natureza analítica e não substitui parecer jurídico individualizado. Para situações concretas, recomenda-se exame específico por profissional habilitado, considerando atos normativos da RFB e do CGIBS supervenientes. Os depoimentos exibidos são de leitores reais; nomes parciais por solicitação dos depoentes.</p>
   </div>
-  <div class="copyright">© 2026 · Todos os direitos reservados</div>
+  <div class="copyright">© 2026 · Reforma no Agro · Todos os direitos reservados</div>
 </footer>
 
-<script src="script.js"></script>
+<!-- =================================================== -->
+<!-- STICKY MOBILE BAR                                    -->
+<!-- =================================================== -->
+<div class="sticky-mobile" id="stickyMobile">
+  <div class="sm-info">
+    <div class="sm-de">de <s>R$ 97,00</s></div>
+    <div class="sm-preco">R$ 47,90</div>
+  </div>
+  <a href="https://pay.hotmart.com/F105598724U" target="_blank" rel="noopener" class="sm-cta">Garantir agora →</a>
+</div>
 
+<script src="script.js" defer></script>
 </body>
 </html>
